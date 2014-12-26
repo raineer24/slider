@@ -7,8 +7,8 @@
     </head>
     <body>
 
-    <div class="single-item autoplay">
-    	<div><img src="images/slide-3.jpg"></div>
+    <div class="slider">
+      <div><img src="images/slide-3.jpg"></div>
         <div><img src="images/slide-1.jpg"></div>
         <div><img src="images/slide-2.jpg"></div>
         
@@ -19,14 +19,12 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script type="text/javascript">
-    	 $(document).ready(function(){
-           $('.single-item').slick();
-           $('.autoplay').slick({
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 2000,
-            });
+       $(document).ready(function(){
+           $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2000
+           });
+          
         });
     </script>
 
